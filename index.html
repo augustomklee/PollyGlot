@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    </head>
+    <body>
+        <!-- Your HTML here -->
+        <header class="header">
+            <img class="avatar" src="./assets/parrot.png" alt="Colorful parrot avatar">
+            <div class="logo-container">
+                <h1 class="logo">PollyGlot</h1>
+                <p class="sublogo">Perfect Translation Every Time</p>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="main-container">
+                <h2 class="system-text">Select the language you 
+me to translate into, type your text and hit send!</h2>
+                <div class="text-container" id="text-container">
+                    <!-- Text messages here -->
+                </div>
+                <div class="input-container">
+                    <input class="text-input" id="text-input" type="text" placeholder="Type here..."/>
+                    <button class="send-message-btn" id="send-message-btn">
+                </div>
+                <div class="flag-container">
+                    <input type="radio" id="french" name="language" value="fr" checked hidden>
+                    <label for="french" class="flag french-flag"></label>
+                    
+                    <input type="radio" id="spanish" name="language" value="es" hidden>              
+                    <label for="spanish" class="flag spanish-flag"></label>
+                    
+                    <input type="radio" id="japan" name="language" value="ja" hidden>
+                    <label for="japan" class="flag japan-flag"></label>
+                </div>
+            </div>
+        </main>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>

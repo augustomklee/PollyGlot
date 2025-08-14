@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 380px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.header {
+    background-image: url(./assets/worldmap.png);   
+    background-position: right;
+    display: flex;
+    padding: 64px 42px;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.avatar {
+    width: 95px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    color: #32CD32;
+    margin: 0;
+    font-weight: 800;
+}
+
+.sublogo {
+    font-size: 0.75rem;
+}
+
+
+/* #035A9D */
+
+.main {
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px 15px;
+    padding: 44px 25px 18px 25px;
+    border-radius: 15px;
+    border: 4px solid #252F42;
+}
+
+.system-text {
+    background-color: #035A9D;
+    padding: 10px 15px;
+    border-radius: 10px 2px 10px 10px;
+}
+
+.user-text {
+    background-color: #65DA65;
+    padding: 10px 15px;
+    border-radius: 2px 10px 10px 10px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 1.5px solid #586E88;
+    padding: 20px;
+}
+
+.text-input {
+    border: 0;
+}
+
+.send-message-btn {
+    background-image: url("./assets/send.png");
+    background-size: cover;
+    background-color: transparent;
+    border: 0;
+    width: 23px;
+    height: 23px;
+}
+
+.flag-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow: auto; /* Enables scrolling if content overflows */
+}
+
+.flag {
+    width: 50px;
+    height: 33px;
+    background-size: cover;
+    border: 2px solid black;
+}
+
+.french-flag {
+    background-image: url("./assets/fr-flag.png");
+}
+
+.spanish-flag {
+    background-image: url("./assets/sp-flag.png");
+}
+
+.japan-flag {
+    background-image: url("./assets/jpn-flag.png");
+}
+
+/* French flag starts with blue border (checked by default) */
+input#french:checked + .flag {
+    border: 3px solid #035A9D;
+}
+
+/* When Spanish is selected, only it gets the blue border */
+input#spanish:checked + .flag {
+    border: 3px solid #035A9D;
+}
+
+/* When Japanese is selected, only it gets the blue border */
+input#japan:checked + .flag {
+    border: 3px solid #035A9D;
+}
+
+/* Override hover when selected */
+.flag:hover {
+    border: 2px solid red;
+}
