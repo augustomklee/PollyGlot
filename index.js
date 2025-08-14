@@ -45,8 +45,7 @@ async function createAIResponse(text, language) {
     
     try {
         const openai = new OpenAI({
-            apiKey: process.env.OPENAI_API_KEY,
-            dangerouslyAllowBrowser: true
+            apiKey: process.env.OPENAI_API_KEY
         });
         
         const response = await openai.chat.completions.create({
